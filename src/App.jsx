@@ -1,22 +1,15 @@
-import { useState } from 'react';
-import Formulario from './components/Formulario';
-import Cita from './components/Cita';
+import Formulario from './Formulario';
+import Cita from './Cita';
+import Listado from './Listado';
 
 function App() {
-  const [citas, setCitas] = useState([]);
-
-  const agregarCita = (nuevaCita) => {
-    setCitas([...citas, nuevaCita]);
-  };
 
   return (
     <div>
       <h1>Administrador de Citas</h1>
-      <Formulario agregarCita={agregarCita} />
+      <Formulario/>
       <h2>Listado de Citas</h2>
-      {citas.map((cita, index) => (
-        <Cita key={index} cita={cita} />
-      ))}
+      <Listado/>
     </div>
   );
 }
