@@ -3,11 +3,11 @@ import './Cita.css';
 const Cita = ({ mascota, propietario, fecha, hora, sintomas }) => {
   return (
     <div class="cita">
-      <p><strong>Mascota:</strong> {mascota}</p>
-      <p><strong>Dueño:</strong> {propietario}</p>
-      <p><strong>Fecha:</strong> {fecha}</p>
-      <p><strong>Hora:</strong> {hora}</p>
-      <p><strong>Síntomas:</strong> {sintomas}</p>
+      <p>Mascota: <span>{mascota}</span></p>
+      <p>Dueño: <span>{propietario}</span></p>
+      <p>Fecha: <span>{fecha}</span></p>
+      <p>Hora: <span>{hora}</span></p>
+      <p>Síntomas: <span>{sintomas}</span></p>
       <button class="button elimnar u-full-width">Eliminar ×</button>
     </div>
   );

@@ -5,12 +5,13 @@ import Listado from './Listado';
 function App() {
 
   return (
-    <div>
-      <h1>Administrador de Citas</h1>
-      <Formulario/>
-      <h2>Listado de Citas</h2>
-      <Listado/>
-    </div>
+    <>
+      <h1>Administrador de Pacientes</h1>
+      <div class="container">
+        <Formulario/>
+        <Listado/>
+      </div>
+    </>
   );
 }
 
